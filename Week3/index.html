@@ -3,13 +3,278 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Week 3 | AME 220</title>
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="A comic-book-inspired portfolio playlist: music, creativity, code, and a little friendly neighborhood energy.">
+  <title>My Portfolio Playlist | Week 3</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>Week 3</h1>
-    <p>Place your Week 3 class work in this folder.</p>
-    <p><a href="../">Back to home</a></p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Portfolio Playlist home">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span>THE EVERYDAY <b>HERO</b></span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#playlist">THE PLAYLIST</a>
+      <a href="#about">MY CREATIVE SIDE</a>
+      <a class="nav-cta" href="#playlist">PRESS PLAY <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-web web-one" aria-hidden="true"></div>
+      <div class="hero-web web-two" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> WEEK 03 / CLASSWORK</p>
+        <h1 id="hero-title">MY PORTFOLIO<br><span class="title-outline">PLAYLIST</span><span class="title-dot">.</span></h1>
+        <p class="hero-intro">Every hero has a soundtrack.<br><strong>Here’s mine.</strong></p>
+        <p class="hero-description">A playlist for big ideas, late-night game sessions, and showing up as your one-of-a-kind self.</p>
+        <a class="button button-primary" href="#playlist">EXPLORE THE MIX <span aria-hidden="true">↓</span></a>
+        <span class="hero-note">YOUR FRIENDLY NEIGHBORHOOD CREATIVE</span>
+      </div>
+      <div class="hero-art" aria-label="Original comic-style illustration of a masked web-slinging hero">
+        <div class="art-sunburst" aria-hidden="true"></div>
+        <div class="art-sticker sticker-top">THWIP!</div>
+        <div class="hero-figure">
+          <svg class="punk-hero" viewBox="0 0 440 500" role="img" aria-labelledby="punk-title punk-description">
+            <title id="punk-title">The Alley-Spark, an original punk-inspired web hero</title>
+            <desc id="punk-description">A masked hero with a bright spiked mohawk, web-patterned mask, and patched street-punk jacket leaps into action.</desc>
+            <defs>
+              <linearGradient id="jacket-shade" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#34343e"/>
+                <stop offset=".52" stop-color="#111116"/>
+                <stop offset="1" stop-color="#262630"/>
+              </linearGradient>
+              <linearGradient id="mask-shade" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#ff4c54"/>
+                <stop offset="1" stop-color="#b71e2a"/>
+              </linearGradient>
+              <pattern id="punk-halftone" width="8" height="8" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.2" fill="#f5f0e8" opacity=".55"/>
+              </pattern>
+              <clipPath id="mask-clip">
+                <path d="M167 111 Q220 83 274 111 L265 178 Q255 221 220 230 Q183 218 175 178Z"/>
+              </clipPath>
+            </defs>
+
+            <g class="punk-spray" fill="#f5f0e8" opacity=".85">
+              <circle cx="63" cy="158" r="4"/><circle cx="83" cy="137" r="2"/><circle cx="348" cy="238" r="3"/>
+              <circle cx="372" cy="214" r="2"/><circle cx="79" cy="290" r="2.5"/><circle cx="335" cy="95" r="3"/>
+              <path d="m93 187 19-9-11 17zM348 302l16-10-8 19z" fill="#50d5df"/>
+              <path d="m124 117 17-11-8 18zM324 173l15-11-7 18z" fill="#ffdf68"/>
+            </g>
+
+            <g class="punk-action">
+              <path d="M145 266 Q116 273 92 299 L41 356 Q30 369 42 380 L57 392 Q68 400 80 387 L149 342Z" fill="#b91e2a" stroke="#101014" stroke-width="12" stroke-linejoin="round"/>
+              <path d="m52 367 34-28 25 19-36 35z" fill="#20202a" stroke="#101014" stroke-width="7"/>
+              <path d="M272 243 Q305 218 318 187 L351 120 Q358 104 374 108 L392 114 Q405 119 398 136 L367 222 Q354 259 315 281Z" fill="#25252e" stroke="#101014" stroke-width="12" stroke-linejoin="round"/>
+              <path d="m365 112 19-7 18 12-10 18-21-4z" fill="#f5f0e8" stroke="#101014" stroke-width="6"/>
+              <path d="M151 232 Q190 207 270 226 L313 357 Q280 386 216 389 Q153 386 109 358Z" fill="url(#jacket-shade)" stroke="#101014" stroke-width="13" stroke-linejoin="round"/>
+              <path d="m164 236 49 43-27 100-53-20z" fill="#ef343a" stroke="#101014" stroke-width="7" stroke-linejoin="round"/>
+              <path d="m262 232-49 47 28 101 55-23z" fill="#19191f" stroke="#101014" stroke-width="7" stroke-linejoin="round"/>
+              <path d="m213 277 13 0 23 103-24 9-27-9z" fill="#f5f0e8" stroke="#101014" stroke-width="5"/>
+              <path d="m170 244 38 32-19 25-42-34zM258 242l-38 34 19 25 42-34z" fill="#f5f0e8" stroke="#101014" stroke-width="6" stroke-linejoin="round"/>
+              <path d="m130 338 23-10 10 18-25 12zM281 340l22-12 9 18-25 14z" fill="#50d5df" stroke="#101014" stroke-width="5"/>
+              <path d="M147 261 168 284M155 253l20 20M269 253l-20 20M278 261l-20 20" stroke="#ffdf68" stroke-width="5" stroke-linecap="round"/>
+
+              <g transform="rotate(-10 220 162)">
+                <path d="M167 111 Q220 83 274 111 L265 178 Q255 221 220 230 Q183 218 175 178Z" fill="url(#mask-shade)" stroke="#101014" stroke-width="11"/>
+                <g clip-path="url(#mask-clip)" fill="none" stroke="#811923" stroke-width="3" opacity=".9">
+                  <path d="M162 130Q220 152 280 130M159 151Q220 172 282 151M160 174Q220 192 280 174M169 197Q220 211 271 197"/>
+                  <path d="M220 88v150M190 95q25 46 0 137M250 95q-25 46 0 137M167 110q43 37 53 73 10-36 53-73"/>
+                </g>
+                <path d="M177 153 212 162 198 180 173 174Z" fill="#f5f0e8" stroke="#101014" stroke-width="5" stroke-linejoin="round"/>
+                <path d="m228 162 35-10 4 21-25 7z" fill="#f5f0e8" stroke="#101014" stroke-width="5" stroke-linejoin="round"/>
+              </g>
+
+              <g class="punk-mohawk" stroke="#101014" stroke-width="7" stroke-linejoin="round">
+                <path d="m172 117-30-55 38 27-9-69 39 56 13-71 16 72 42-51-13 65 41-30-35 63z" fill="#ef343a"/>
+                <path d="m156 82 24 11-7-40zM195 76l15-67 4 73z" fill="#2873e8"/>
+                <path d="m236 75 29-34-10 47zM278 77l39-27-32 48z" fill="#ffdf68"/>
+                <path d="m177 104 14-29 20 19 16-25 16 27 21-22 13 30z" fill="#ef343a"/>
+              </g>
+
+              <path d="M135 350q-26 8-39 30l-20 26q-8 11 1 19l11 8q12 7 20-5l48-55z" fill="#f5f0e8" stroke="#101014" stroke-width="10" stroke-linejoin="round"/>
+              <path d="m82 400 17-17 17 10-20 25z" fill="#2873e8" stroke="#101014" stroke-width="5"/>
+
+              <g class="jacket-patches" font-family="Arial, sans-serif" font-weight="900" text-anchor="middle">
+                <path d="m135 307 37-14 8 37-39 11z" fill="#ffdf68" stroke="#101014" stroke-width="5"/>
+                <text x="157" y="324" fill="#101014" font-size="12" transform="rotate(-12 157 324)">DIY</text>
+                <path d="m258 298 34 8-7 36-36-8z" fill="#2873e8" stroke="#101014" stroke-width="5"/>
+                <text x="269" y="325" fill="#fff" font-size="11" transform="rotate(10 269 325)">LOUD</text>
+                <circle cx="183" cy="353" r="8" fill="#ef343a" stroke="#f5f0e8" stroke-width="3"/>
+                <circle cx="269" cy="365" r="7" fill="#ffdf68" stroke="#f5f0e8" stroke-width="3"/>
+                <path d="m220 306 4 10 10 1-8 6 3 10-9-6-9 6 3-10-8-6 10-1z" fill="#f5f0e8"/>
+              </g>
+              <path d="M138 382q78 25 160-2" fill="none" stroke="#50d5df" stroke-width="5" stroke-dasharray="5 9"/>
+              <path d="m116 275-11 6m17-16-11 6m204-9 12-7m-20 22 12-7" stroke="#ffdf68" stroke-width="5" stroke-linecap="round"/>
+            </g>
+
+            <path d="M53 236q26-25 48-5m236 77q19-19 39-4" fill="none" stroke="#f5f0e8" stroke-width="3" stroke-dasharray="4 7" opacity=".8"/>
+            <path d="m339 350 17-11-7 21 21-3-18 15" fill="none" stroke="#ef343a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <svg class="ghost-companion" viewBox="0 0 150 160" role="img" aria-labelledby="ghost-title ghost-description">
+          <title id="ghost-title">A mischievous purple ghost companion</title>
+          <desc id="ghost-description">A tiny floating purple ghost with a playful grin keeps the punk hero company.</desc>
+          <defs>
+            <radialGradient id="ghost-glow">
+              <stop offset="0" stop-color="#d9a0ff"/>
+              <stop offset="1" stop-color="#7133d6"/>
+            </radialGradient>
+          </defs>
+          <g class="ghost-particles" fill="#d9a0ff">
+            <circle cx="22" cy="48" r="4"/><circle cx="129" cy="72" r="3"/>
+            <path d="m126 34 3 7 7 1-6 4 2 7-6-4-6 4 2-7-6-4 7-1z" fill="#50d5df"/>
+            <circle cx="32" cy="116" r="2.5" fill="#ffdf68"/>
+          </g>
+          <path d="M75 18 91 8 96 25 113 17 111 38 Q135 53 130 82 L138 99 121 103 130 121 109 118 105 145 87 132 72 151 61 133 42 147 40 125 20 130 29 109 12 101 26 86 Q18 57 42 40 L43 20 60 28Z" fill="url(#ghost-glow)" stroke="#25123f" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M31 70 Q43 59 58 67 L55 81 Q43 76 33 83Z" fill="#fff3dc" stroke="#25123f" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M80 66 Q97 54 111 64 L107 79 Q94 75 82 82Z" fill="#fff3dc" stroke="#25123f" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M43 94 Q75 82 108 94 Q103 119 78 122 Q55 120 43 94Z" fill="#25123f" stroke="#25123f" stroke-width="4" stroke-linejoin="round"/>
+          <path d="m55 96 5 9 7-11 7 11 8-11 7 10 8-10" fill="none" stroke="#fff3dc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M69 121q8 6 16 0" fill="none" stroke="#ff8bdd" stroke-width="4" stroke-linecap="round"/>
+          <path d="M39 54q9-8 17-5m43-4q8-2 14 4" fill="none" stroke="#f1caff" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div class="art-sticker sticker-bottom">100%<br>ORIGINAL</div>
+        <span class="art-caption">POWERED BY<br>IMAGINATION <b>↗</b></span>
+      </div>
+      <div class="hero-bottomline"><span>ISSUE NO. 03</span><span>CREATIVITY IN MOTION</span><span>NEW YORK STATE OF MIND <span class="tiny-star">✳</span></span></div>
+    </section>
+
+    <section class="intro-strip" aria-label="Playlist introduction">
+      <span class="intro-icon" aria-hidden="true">✳</span>
+      <p>With great playlists comes <em>great personality.</em></p>
+      <span class="intro-tag">SIDE A / THE SOUNDTRACK</span>
+    </section>
+
+    <section class="playlist section-wrap" id="playlist" aria-labelledby="playlist-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> SIX TRACKS. ONE BIG PERSONALITY.</p>
+          <h2 id="playlist-title">THE <span>PLAYLIST</span></h2>
+        </div>
+        <p class="section-aside">A little focus. A little chaos.<br>A whole lot of main-character energy.</p>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filter songs by mood">
+        <span class="filter-label">SORT THE SOUNDTRACK</span>
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">ALL TRACKS <span>06</span></button>
+        <button class="filter-button" type="button" data-filter="focus" aria-pressed="false">FOCUS</button>
+        <button class="filter-button" type="button" data-filter="energy" aria-pressed="false">ENERGY</button>
+        <button class="filter-button" type="button" data-filter="imagination" aria-pressed="false">IMAGINATION</button>
+        <span class="filter-count" aria-live="polite">SHOWING 06 TRACKS</span>
+      </div>
+
+      <div class="song-grid">
+        <article class="song-card" data-mood="energy imagination">
+          <div class="cover cover-do-what-i-want" role="img" aria-label="Original red, blue, and black comic-inspired album art placeholder for Do What I Want">
+            <span class="cover-label">NO<br>RULES</span><span class="cover-freedom" aria-hidden="true">✳</span><span class="cover-number">01 / 06</span>
+          </div>
+          <div class="card-content">
+            <p class="track-type">THE OWN-YOUR-PATH ANTHEM <span>✳</span></p>
+            <h3>Do What I Want</h3><p class="artist">Kid Cudi</p>
+            <p class="song-note">A reminder to trust my own ideas, move to my own rhythm, and create without waiting for permission.</p>
+            <a class="listen-link" href="https://www.youtube.com/results?search_query=Do+What+I+Want+Kid+Cudi" target="_blank" rel="noopener noreferrer">LISTEN TO THE TRACK <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="song-card" data-mood="energy">
+          <div class="cover cover-danger" role="img" aria-label="Original red and black comic-inspired album art placeholder">
+            <span class="cover-label">NO<br>FEAR</span><span class="cover-burst" aria-hidden="true">GO!</span><span class="cover-number">02 / 06</span>
+          </div>
+          <div class="card-content">
+            <p class="track-type">THE LEAP-OF-FAITH TRACK <span>✳</span></p>
+            <h3>What's Up Danger</h3><p class="artist">Blackway &amp; Black Caviar</p>
+            <p class="song-note">It sounds like taking a deep breath, trusting myself, and jumping into the next big challenge.</p>
+            <a class="listen-link" href="https://www.youtube.com/results?search_query=What%27s+Up+Danger+Blackway+Black+Caviar" target="_blank" rel="noopener noreferrer">LISTEN TO THE TRACK <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="song-card" data-mood="focus energy">
+          <div class="cover cover-blinding" role="img" aria-label="Original neon city-inspired album art placeholder">
+            <span class="cover-label">NIGHT<br>DRIVE</span><span class="cover-sun" aria-hidden="true"></span><span class="cover-number">03 / 06</span>
+          </div>
+          <div class="card-content">
+            <p class="track-type">THE LOCK-IN MODE <span>✳</span></p>
+            <h3>Blinding Lights</h3><p class="artist">The Weeknd</p>
+            <p class="song-note">That pulsing beat flips my focus switch. Perfect for getting into a flow and making progress on an idea.</p>
+            <a class="listen-link" href="https://www.youtube.com/results?search_query=Blinding+Lights+The+Weeknd" target="_blank" rel="noopener noreferrer">LISTEN TO THE TRACK <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="song-card" data-mood="energy focus">
+          <div class="cover cover-go-to-work" role="img" aria-label="Original black, red, and yellow comic-inspired album art placeholder for Go To Work">
+            <span class="cover-label">GET<br>TO IT</span><span class="cover-work" aria-hidden="true">GO!</span><span class="cover-number">04 / 06</span>
+          </div>
+          <div class="card-content">
+            <p class="track-type">THE GET-IT-DONE TRACK <span>✳</span></p>
+            <h3>Go To Work</h3><p class="artist">Kris Mula</p>
+            <p class="song-note">This one brings the hustle energy—perfect for locking in, putting in the work, and bringing an idea to life.</p>
+            <a class="listen-link" href="https://www.youtube.com/results?search_query=Go+To+Work+Kris+Mula" target="_blank" rel="noopener noreferrer">LISTEN TO THE TRACK <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="song-card" data-mood="imagination focus">
+          <div class="cover cover-midnight" role="img" aria-label="Original blue and purple dream-city album art placeholder">
+            <span class="cover-label">AFTER<br>HOURS</span><span class="cover-moon" aria-hidden="true">◒</span><span class="cover-number">05 / 06</span>
+          </div>
+          <div class="card-content">
+            <p class="track-type">THE DAYDREAM DIMENSION <span>✳</span></p>
+            <h3>Midnight City</h3><p class="artist">M83</p>
+            <p class="song-note">Big, cinematic sounds make space for big ideas. This one turns a quiet moment into an adventure.</p>
+            <a class="listen-link" href="https://www.youtube.com/results?search_query=Midnight+City+M83" target="_blank" rel="noopener noreferrer">LISTEN TO THE TRACK <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="song-card" data-mood="energy imagination">
+          <div class="cover cover-cant-hold" role="img" aria-label="Original black, red, and white collage-inspired album art placeholder">
+            <span class="cover-label">NO<br>LIMITS</span><span class="cover-star" aria-hidden="true">★</span><span class="cover-number">06 / 06</span>
+          </div>
+          <div class="card-content">
+            <p class="track-type">THE BIG-IDEA BOOST <span>✳</span></p>
+            <h3>Can't Hold Us</h3><p class="artist">Macklemore &amp; Ryan Lewis</p>
+            <p class="song-note">Creative energy, turned all the way up. It makes every new project feel like it’s going somewhere.</p>
+            <a class="listen-link" href="https://www.youtube.com/results?search_query=Can%27t+Hold+Us+Macklemore+Ryan+Lewis" target="_blank" rel="noopener noreferrer">LISTEN TO THE TRACK <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="playlist-footnote"><span aria-hidden="true">✳</span> ALBUM ART IS ORIGINAL PLACEHOLDER ART — THE MUSIC LINKS OPEN A YOUTUBE SEARCH IN A NEW TAB.</p>
+    </section>
+
+    <section class="creative" id="about" aria-labelledby="creative-title">
+      <div class="creative-pattern" aria-hidden="true"></div>
+      <div class="creative-inner">
+        <div class="creative-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> MORE THAN A PLAY BUTTON</p>
+          <h2 id="creative-title">MY<br>CREATIVE<br><span>SIDE.</span></h2>
+          <p class="creative-lede">Different worlds. Same curious mind.</p>
+          <p class="creative-description">I love exploring how things work—whether that means learning to code, diving into a game, or getting inspired by a hero who uses their gifts to help others.</p>
+          <a class="button button-light" href="#top">BACK TO THE TOP <span aria-hidden="true">↑</span></a>
+        </div>
+        <div class="interest-list">
+          <article class="interest-item"><span class="interest-number">01</span><span class="interest-icon" aria-hidden="true">⌘</span><div><h3>CODING</h3><p>Turning a blank screen into something you can click, explore, and make your own.</p></div><span class="interest-spark" aria-hidden="true">✳</span></article>
+          <article class="interest-item"><span class="interest-number">02</span><span class="interest-icon" aria-hidden="true">▣</span><div><h3>GAMING</h3><p>Exploring new worlds, solving problems, and finding out what happens next.</p></div><span class="interest-spark" aria-hidden="true">✳</span></article>
+          <article class="interest-item"><span class="interest-number">03</span><span class="interest-icon" aria-hidden="true">✎</span><div><h3>CREATIVITY</h3><p>Mixing ideas, color, and a little bit of chaos to make something original.</p></div><span class="interest-spark" aria-hidden="true">✳</span></article>
+          <article class="interest-item"><span class="interest-number">04</span><span class="interest-icon" aria-hidden="true">✳</span><div><h3>SPIDER-MAN</h3><p>A favorite reminder that doing the right thing—and being yourself—matters.</p></div><span class="interest-spark" aria-hidden="true">✳</span></article>
+        </div>
+      </div>
+      <div class="creative-stamp" aria-hidden="true">BE<br>YOUR<br>OWN<br>HERO</div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-web" aria-hidden="true"></div>
+    <div class="footer-main">
+      <a class="footer-brand" href="#top"><span aria-hidden="true">✳</span> THAT'S A<br><b>WRAP!</b></a>
+      <p>STAY CURIOUS. KEEP CREATING.<br>YOUR FRIENDLY NEIGHBORHOOD CREATIVE.</p>
+      <a class="footer-top" href="#top">BACK UP TOP <span aria-hidden="true">↑</span></a>
+    </div>
+    <div class="footer-bottom"><span>WEEK 03 CLASSWORK</span><span>MADE WITH <b>♥</b> &amp; A LITTLE BIT OF WEB-SLINGING</span><span>© <span id="current-year">2026</span> / END OF ISSUE</span></div>
+  </footer>
 </body>
 </html>
