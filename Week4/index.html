@@ -3,13 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Week 4 | AME 220</title>
+  <meta name="theme-color" content="#263b24">
+  <meta name="description" content="Explore block-built worlds, biomes, crafting, and survival in Minecraft: Beyond the Blocks.">
+  <title>Minecraft: Beyond the Blocks</title>
+  <link rel="stylesheet" href="startingStyles-renameMeTostyles.css">
 </head>
 <body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Minecraft: Beyond the Blocks home">
+      <span class="brand-cube" aria-hidden="true"><span></span></span>
+      <span>BEYOND<br>THE BLOCKS</span>
+    </a>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#biomes">BIOMES</a></li>
+      <li><a href="#mobs">MOBS</a></li>
+      <li><a href="#items">ITEMS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <h1>Week 4</h1>
-    <p>Place your Week 4 class work in this folder.</p>
-    <p><a href="../">Back to home</a></p>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-sky" aria-hidden="true">
+        <span class="pixel-sun"></span>
+        <span class="pixel-cloud cloud-one"></span>
+        <span class="pixel-cloud cloud-two"></span>
+        <span class="mountain mountain-back"></span>
+        <span class="mountain mountain-front"></span>
+        <span class="block-tree tree-one"></span>
+        <span class="block-tree tree-two"></span>
+        <span class="grass-ground"></span>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">A BLOCK-BY-BLOCK FIELD GUIDE</p>
+        <h1 id="hero-title">EXPLORE<br>YOUR WORLD</h1>
+        <p class="hero-subtitle">YOUR ADVENTURE STARTS HERE.</p>
+        <a class="button" href="#about">START EXPLORING <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero-coordinate" aria-hidden="true">X: 120 &nbsp; Y: 72 &nbsp; Z: -340</p>
+    </section>
+
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="world-art" role="img" aria-label="A pixel-art landscape with grass, trees, and a blue sky">
+        <span class="art-sun"></span>
+        <span class="art-cloud art-cloud-one"></span>
+        <span class="art-cloud art-cloud-two"></span>
+        <span class="art-hill art-hill-back"></span>
+        <span class="art-hill art-hill-front"></span>
+        <span class="art-tree"></span>
+        <span class="art-ground"></span>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">WELCOME, BUILDER</p>
+        <h2 id="about-title">A WORLD MADE OF POSSIBILITY</h2>
+        <p>Minecraft is a sandbox adventure where every block can become part of your next big idea. Gather materials, build a home, explore a changing landscape, and make the world your own.</p>
+        <p>There is no single path to follow: create at your own pace, venture beyond familiar ground, or team up with friends to see what you can make together.</p>
+        <a class="text-link" href="#biomes">PICK A PLACE TO EXPLORE <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="biomes section-shell" id="biomes" aria-labelledby="biomes-title">
+      <header class="section-heading">
+        <p class="eyebrow">FOUR PLACES, INFINITE PATHS</p>
+        <h2 id="biomes-title">CHOOSE YOUR BIOME</h2>
+      </header>
+      <div class="biome-grid">
+        <article class="biome-card forest">
+          <div class="biome-art" aria-hidden="true"><span></span><i></i><b></b></div>
+          <div class="card-copy"><p class="card-index">BIOME 01</p><h3>FOREST</h3><p>Follow leafy trails, gather wood, and see what waits beneath the canopy.</p></div>
+        </article>
+        <article class="biome-card desert">
+          <div class="biome-art" aria-hidden="true"><span></span><i></i><b></b></div>
+          <div class="card-copy"><p class="card-index">BIOME 02</p><h3>DESERT</h3><p>Cross sunlit dunes and search the sand for signs of an older story.</p></div>
+        </article>
+        <article class="biome-card nether">
+          <div class="biome-art" aria-hidden="true"><span></span><i></i><b></b></div>
+          <div class="card-copy"><p class="card-index">BIOME 03</p><h3>NETHER</h3><p>Step into a fiery dimension where preparation is part of the adventure.</p></div>
+        </article>
+        <article class="biome-card ocean">
+          <div class="biome-art" aria-hidden="true"><span></span><i></i><b></b></div>
+          <div class="card-copy"><p class="card-index">BIOME 04</p><h3>OCEAN</h3><p>Dive into deep blue waters and discover a world below the waves.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard-section section-shell" id="mobs" aria-labelledby="dashboard-title">
+      <header class="section-heading">
+        <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+        <h2 id="dashboard-title">THE ADVENTURER'S GUIDE</h2>
+      </header>
+      <div class="dashboard">
+        <article class="info-card" id="items"><span class="card-icon grass-icon" aria-hidden="true"></span><p class="card-index">01 / BUILD</p><h3>BLOCKS</h3><p>Collect and combine materials to shape the world around you.</p></article>
+        <article class="info-card"><span class="card-icon mob-icon" aria-hidden="true">?</span><p class="card-index">02 / ENCOUNTER</p><h3>MOBS</h3><p>Meet the creatures that roam the world, from friendly to fearsome.</p></article>
+        <article class="info-card"><span class="card-icon portal-icon" aria-hidden="true"></span><p class="card-index">03 / TRAVEL</p><h3>DIMENSIONS</h3><p>Look beyond the Overworld and prepare for unfamiliar places.</p></article>
+        <article class="info-card"><span class="card-icon craft-icon" aria-hidden="true"></span><p class="card-index">04 / MAKE</p><h3>CRAFTING</h3><p>Turn gathered resources into tools, shelter, and useful gear.</p></article>
+        <article class="info-card"><span class="card-icon compass-icon" aria-hidden="true">✦</span><p class="card-index">05 / DISCOVER</p><h3>EXPLORATION</h3><p>Set out beyond the horizon and find a place worth remembering.</p></article>
+        <article class="info-card"><span class="card-icon heart-icon" aria-hidden="true">+</span><p class="card-index">06 / ENDURE</p><h3>SURVIVAL</h3><p>Plan ahead, stay alert, and make it through the night.</p></article>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-brand">
+      <span class="brand-cube" aria-hidden="true"><span></span></span>
+      <p>MINECRAFT<br><strong>BEYOND THE BLOCKS</strong></p>
+    </div>
+    <div class="footer-column"><h2>EXPLORE</h2><a href="#biomes">Biomes</a><a href="#mobs">Adventurer's guide</a></div>
+    <div class="footer-column"><h2>CREATE</h2><a href="#items">Blocks & crafting</a><a href="#about">Your next build</a></div>
+    <div class="footer-column"><h2>CONTACT</h2><p>Have a question? Share it with your fellow builders.</p><a href="#home">Back to the surface ↑</a></div>
+    <p class="footer-note">AN UNOFFICIAL FAN-MADE ADVENTURE GUIDE. MINECRAFT IS A TRADEMARK OF ITS RESPECTIVE OWNER.</p>
+  </footer>
 </body>
 </html>
